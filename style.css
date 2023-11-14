@@ -1,0 +1,250 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-width: 5rem;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 clamp(20px, 30vw, 60px);
+  background: linear-gradient(rgb(143, 39, 247), rgb(2, 2, 236));
+  color: white;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+}
+
+.circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  width: clamp(20px, 30vw, 120px);
+  height: clamp(20px, 30vw, 120px);
+  border-radius: 50%;
+}
+
+.left h4 {
+  font-size: clamp(0.2rem, 5vw, 1rem);
+  text-align: center;
+}
+
+.left h1 {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-size: clamp(0.5rem, 10vw, 3rem);
+}
+
+.left h5 {
+  margin-top: 0;
+  font-size: clamp(0.5rem, 5vw, 1rem);
+}
+
+.left h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: clamp(0.5rem, 5vw, 1.2rem);
+}
+
+p {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: clamp(0.2rem, 3.5vw, 1rem);
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(240, 234, 228);
+  padding: 0 15px;
+  border-radius: 10px;
+  width: clamp(110px, 90vw, 300px);
+}
+
+#logo {
+  display: flex;
+}
+
+.boxes h4 {
+  margin: 10px 0;
+  margin-left: 7px;
+  font-size: clamp(0.5rem, 5vw, 1rem);
+}
+
+.title > h4 {
+  margin-bottom: 0;
+}
+
+button {
+  width: clamp(110px, 90vw, 300px);
+  border: none;
+  background-color: rgb(8, 8, 84);
+  color: white;
+  border-radius: 30px;
+  margin: 12px 0;
+  cursor: pointer;
+}
+
+.title {
+  align-self: flex-start;
+  margin-left: clamp(10px, 7vw, 50px);
+}
+
+.title > h4 {
+  font-size: clamp(0.5rem, 5vw, 1rem);
+}
+
+button > h4 {
+  font-size: clamp(0.5rem, 5vw, 1rem);
+}
+
+@media (min-width: 376px) {
+  body {
+    min-height: 100vh;
+  }
+
+  .container {
+    flex-direction: row;
+    background-color: white;
+    display: flex;
+    min-width: 23.438rem;
+    max-width: 40rem;
+    min-height: 22rem;
+    border-radius: 20px;
+  }
+
+  .left {
+    width: 50%;
+    text-align: center;
+    background: linear-gradient(rgb(143, 39, 247), rgb(2, 2, 236));
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 20px;
+  }
+
+  .circle {
+    background: linear-gradient(
+      to bottom,
+      hsla(256, 72%, 46%, 1),
+      hsla(241, 72%, 46%, 0)
+    );
+    width: clamp(20px, 28vw, 160px);
+    height: clamp(20px, 28vw, 160px);
+    border-radius: 50%;
+  }
+
+  .left h4 {
+    font-size: clamp(0.5rem, 2.2vw, 1rem);
+  }
+
+  .left h1 {
+    margin-bottom: 0;
+    margin-top: 25px;
+    font-size: clamp(0.5rem, 10vw, 4rem);
+  }
+
+  .left h5 {
+    margin-top: 0;
+  }
+
+  .left > h2 {
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: clamp(0.5rem, 4vw, 1.5rem);
+  }
+
+  .left > p {
+    margin-bottom: 40px;
+    font-size: clamp(0.5rem, 2.2vw, 1rem);
+  }
+
+  .right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .title {
+    align-self: flex-start;
+    margin-left: 36px;
+  }
+
+  .title > h4 {
+    font-size: clamp(0.5rem, 2.5vw, 1rem);
+    margin-top: 0;
+  }
+
+  .boxes {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(240, 234, 228);
+    width: clamp(50px, 35vw, 250px);
+    padding: 0 15px;
+    border-radius: 10px;
+  }
+
+  .boxes h4 {
+    margin: 7px 0;
+    font-size: clamp(0.5rem, 2.4vw, 1rem);
+    margin-left: 7px;
+  }
+
+  .right > h4 {
+    margin-bottom: 0;
+  }
+
+  button {
+    width: clamp(50px, 35vw, 250px);
+    border-radius: 30px;
+    background-color: rgb(8, 8, 84);
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  button > h4 {
+    margin: 15px 0;
+    color: white;
+  }
+
+  #logo {
+    display: flex;
+  }
+}
